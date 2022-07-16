@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---------googleFont----------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Tajawal:wght@200;300;400;500;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
+        integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/assits/css/index_style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <!-----------------------------Style--------------------------------->
+    <style>
+        .iti--allow-dropdown .iti__flag-container,
+        .iti--separate-dial-code .iti__flag-container {
+            right: auto;
+            right: 0 !important;
+        }
+
+        .iti__flag {
+            margin-left: 7px !important;
+        }
+    </style>
+    <title>taswiq</title>
+</head>
+
+<body>
+    <!-----------------------------navbar------------------------------------------->
+    <div class="header_nav">
+        <div class="container">
+            <div class="d-flex justify-content-between py-2">
+                <div class="d-flex">
+                    <p class="lang mb-0">
+                        <a class="lang" href="/en/privacy.html">English</a>
+                    </p>
+                    <button class="btn  dropdown-toggle p-0 mx-3" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        مصر <img src="/assits/imgs/egypt_flag.png" alt="egypt_flag" class="egypt_flag"> </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+
+
+
+
+                </div>
+                <div> <a href="" class="login_link">تسجيل الدخول</a>
+                    <img src="/assits/imgs/facebook.png" alt="facebook" class="facebook_img">
+                    <img src="/assits/imgs/instgram.png" alt="instgram" class="instgram_img">
+                    <img src="/assits/imgs/twitter.png" alt="twitter" class="twitter_img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/home.html">
+                <img src="/assits/imgs/logo.png" alt="logo" class="logo" />
+            </a> <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-0 w-100 d-flex justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link " href="/home.html" tabindex="-1" aria-disabled="true">الرئيسية</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            جميع التصنيفات
+                        </a>
+                        <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">العروض</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="/contactus.html">تواصل معنا</a>
+                    </li>
+
+
+
+                </ul>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ar_chat d-flex">
+                        <img src="/assits/imgs/chat.svg" alt="chat" class="px-2">
+                    </li>
+                    <li class="nav-item ar_account_container">
+                        <button class="  dropdown-toggle p-0 mx-3 d-flex align-items-center" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+
+                            <img src="/assits/imgs/AccoundImg.png" alt="AccoundImg" class="AccoundImg">
+                            Ahmed
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="d-flex ">
+                        <div class="add_ads d-flex justify-content-center">
+                            إضافة إعلان
+                            <img src="/assits/imgs/add_img.png" class="add_img" alt="add_img">
+                        </div>
+                </form>
+            </div>
+
+        </div>
+    </nav>
+    <!------------------------------profile Container--------------------------------------->
+    <div class=" bg-white profile_container ">
+        <div class="container mt-1">
+            <div class="row">
+                <div class="col-md-3 mt-1 pt-3 ">
+                    <ul class="ml-0 mr-5 p-0 border-bottom side_bar">
+                        <li class="p-3 privacy bg_side_bar"> <img src="/assits/imgs/Mask.png" alt="Mask"
+                                class="mr-1">الملف
+                            الشخصي
+                        </li>
+                        <li class="p-3 change_pass "> <img src="/assits/imgs/changePAssword.png" alt="changePAssword"
+                                class="mr-1">تتغيير كلمة المرور</li>
+                        <li class="p-3 adv_title"> <img src="/assits/imgs/adv.png" alt="adv" class="mr-1">إعلاناتي</li>
+                        <li class="p-3 bundle_title"> <img src="/assits/imgs/bundle.png" alt="bundle" class="mr-1">باقتي
+                        </li>
+                        <li class="p-3 fav_ads_title"> <img src="/assits/imgs/fav.png" alt="fav" class="mr-1">المفضلة
+                        </li>
+                    </ul>
+                    <ul class="ml-0 mr-5 p-0 side_bar">
+                        <li class="p-3"> <img src="/assits/imgs/logout.png" alt="logout" class="mr-1">تسجيل الخروج</li>
+                    </ul>
+                </div>
+                <!--------------------------general info----------------------------->
+                <div class="col-md-9 bg-light p-4 ar_form_container" id="privacy_container">
+                    <h6>الملف الشخصي</h6>
+                    <p class="mb-4">إدارة التفاصيل الخاصة بك</p>
+                    <form class="bg-white p-4">
+                        <h5 class="mb-4">معلومات عامة</h5>
+                        <div class="row">
+                            <div class="col-md-6 my-2">
+                                <input value="Ahmed Mohamed Abdullah" class="form-control w-100 text-left p-3">
+
+                            </div>
+                            <div class="col-md-6 my-2">
+                                <form id="login" onsubmit="process(event)" class="w-100 my-3 ar_form ">
+                                    <input id="phone" type="tel" name="phone" class="w-100 text-right"
+                                        placeholder="1027462451"
+                                        style="padding-right: 55px !important;text-align:right !important" />
+                                </form>
+
+                            </div>
+                            <div class="col-md-6 my-2">
+                                <button class="mt-4 save_change_btn px-3 py-2">حفظ التغييرات</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-----------------------------------change pass---------------------------------------------->
+                <div class="col-md-9 bg-light p-4 ar_chage_pass_container" style="display:none" id="change_pass">
+                    <h6>تغيير كلمة المرور</h6>
+                    <p class="mb-4">هنا يمكنك تغيير كلمة المرور الخاصة بك</p>
+                    <form class="bg-white p-4">
+                        <h5 class="mb-4">تغيير كلمة المرور</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>كلمة المرور الحالية</label>
+                                <input class="form-control w-100" type="password">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6"> <label>كلمة المرور الجديدة</label>
+                                <input class="form-control w-100" type="password">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6"> <label>تأكيد كلمة المرور الجديدة</label>
+                                <input class="form-control w-100" type="password">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <button class="save_btn px-3 py-2 mt-3">حفظ التغييرات</button>
+
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <!---------------------------------------bundle--------------------------------->
+                <div class="col-md-9 bg-light p-4 ar_chage_pass_container" id="bundle_container" style="display:none">
+
+                    <h6>باقتي</h6>
+                    <p class="mb-4">يمكنك معرفة باقتك المشترك بها من هنا</p>
+                    <form class="bg-white p-4">
+                        <h5 class="mb-4">حزمة الإعلانات الفضية</h5>
+                        <ul class="p-0 bundle_list">
+                            <li class="my-2">
+                                Period : 5 Days
+                            </li>
+                            <li class="my-2">Price : 2500 Egp</li>
+                            <li class="my-2">Start Date : 12 Feb 2022</li>
+                            <li class="my-2">End Date : 17 Feb 2022</li>
+                        </ul>
+                    </form>
+                </div>
+
+
+                <!---------------------------------fav ads------------------------------->
+                <div class="col-md-9 bg-light p-4 ar_chage_pass_container" id="fav_ads_container" style="display:none">
+                    <h6>مفضلتي</h6>
+                    <p class="mb-4">Here you can change your password</p>
+                    <form class="bg-white p-4">
+                        <h5 class="mb-4">الإعلانات المفضلة</h5>
+                        <div class="featured_ads_container">
+                            <div class="row ">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="/assits/imgs/featureAdr1.png" class="card-img-top" alt="..." />
+                                        <div class="star_icon_container">
+                                            <img src="/assits/imgs//starIcon.svg" class="star_icon" alt="starIcon" />
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card_title">
+                                                <div>
+                                                    <img src="/assits/imgs/heart.png" alt="heart" class="heart_img" />
+                                                </div>
+                                                <div>
+                                                    <p>Kia sportag 2019</p>
+                                                </div>
+                                            </div>
+                                            <p class="card_price">490,500 EGP</p>
+
+                                            <div class="d-flex justify-content-between card_text">
+                                                <div class="d-flex">
+                                                    <p>2014</p>
+                                                    <div class="date_icon"></div>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p>Yaris</p>
+                                                    <div class="date_icon"></div>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p>Toyota</p>
+                                                    <div class="date_icon"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card_footer">١٩ فبراير ٢٠٢٢ - المعادي</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="/assits/imgs/featureAdr1.png" class="card-img-top" alt="..." />
+                                        <div class="star_icon_container">
+                                            <img src="/assits/imgs//starIcon.svg" class="star_icon" alt="starIcon" />
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card_title">
+                                                <div>
+                                                    <img src="/assits/imgs/heart.png" alt="heart" class="heart_img" />
+                                                </div>
+                                                <div>
+                                                    <p>Kia sportag 2019</p>
+                                                </div>
+                                            </div>
+                                            <p class="card_price">490,500 EGP</p>
+
+                                            <div class="d-flex justify-content-between card_text">
+                                                <div class="d-flex">
+                                                    <p>2014</p>
+                                                    <div class="date_icon"></div>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p>Yaris</p>
+                                                    <div class="date_icon"></div>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p>Toyota</p>
+                                                    <div class="date_icon"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card_footer">١٩ فبراير ٢٠٢٢ - المعادي</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="/assits/imgs/featureAdr1.png" class="card-img-top" alt="..." />
+                                        <div class="star_icon_container">
+                                            <img src="/assits/imgs//starIcon.svg" class="star_icon" alt="starIcon" />
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card_title">
+                                                <div>
+                                                    <img src="/assits/imgs/heart.png" alt="heart" class="heart_img" />
+                                                </div>
+                                                <div>
+                                                    <p>Kia sportag 2019</p>
+                                                </div>
+                                            </div>
+                                            <p class="card_price">490,500 EGP</p>
+
+                                            <div class="d-flex justify-content-between card_text">
+                                                <div class="d-flex">
+                                                    <p>2014</p>
+                                                    <div class="date_icon"></div>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p>Yaris</p>
+                                                    <div class="date_icon"></div>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p>Toyota</p>
+                                                    <div class="date_icon"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card_footer">١٩ فبراير ٢٠٢٢ - المعادي</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+                <!-------------------------------ads------------------------->
+                <div class="col-md-9 bg-light p-4 ar_chage_pass_container" id="ads_container" style="display:none">
+                    <h6>إعلاناتي</h6>
+                    <p class="mb-4">Here you can change your password</p>
+                    <form class="bg-white p-4">
+                        <h5 class="mb-4"> إعلاناتي</h5>
+                        <div class="featured_ads_container">
+                            <div class="row ">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="/assits/imgs/featureAdr1.png" class="card-img-top" alt="..." />
+                                        <div class="icons_container">
+                                            <div class="star_icon_container">
+                                                <img src="/assits/imgs//starIcon.svg" class="star_icon"
+                                                    alt="starIcon" />
+                                            </div>
+                                            <img src="/assits/imgs/editads.svg" alt="editads" class=" mt-2">
+                                            <img src="/assits/imgs/deleteAds.svg" alt="deleteAds" class="mx-2 mt-2">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card_title">
+                                                <div>
+                                                    <img src="/assits/imgs/heart.png" alt="heart" class="heart_img" />
+
+                                                </div>
+                                                <div>
+                                                    <p>Kia sportag 2019</p>
+                                                </div>
+                                            </div>
+                                            <p class="card_price">490,500 EGP</p>
+
+                                            <div class="d-flex justify-content-between card_text">
+                                                <div class="d-flex">
+                                                    <p>2014</p>
+                                                    <div class="date_icon"></div>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p>Yaris</p>
+                                                    <div class="date_icon"></div>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p>Toyota</p>
+                                                    <div class="date_icon"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card_footer d-flex justify-content-between">١٩ فبراير ٢٠٢٢ - المعادي
+
+                                            <p class="mb-0 pt-1"> <img src="/assits/imgs/seenIcon.svg" alt="seenIcon">20
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="/assits/imgs/featureAdr1.png" class="card-img-top" alt="..." />
+                                        <div class="icons_container">
+                                            <div class="star_icon_container">
+                                                <img src="/assits/imgs//starIcon.svg" class="star_icon"
+                                                    alt="starIcon" />
+                                            </div>
+                                            <img src="/assits/imgs/editads.svg" alt="editads" class=" mt-2">
+                                            <img src="/assits/imgs/deleteAds.svg" alt="deleteAds" class="mx-2 mt-2">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card_title">
+                                                <div>
+                                                    <img src="/assits/imgs/heart.png" alt="heart" class="heart_img" />
+                                                </div>
+                                                <div>
+                                                    <p>Kia sportag 2019</p>
+                                                </div>
+                                            </div>
+                                            <p class="card_price">490,500 EGP</p>
+
+                                            <div class="d-flex justify-content-between card_text">
+                                                <div class="d-flex">
+                                                    <p>2014</p>
+                                                    <div class="date_icon"></div>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p>Yaris</p>
+                                                    <div class="date_icon"></div>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p>Toyota</p>
+                                                    <div class="date_icon"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card_footer d-flex justify-content-between">١٩ فبراير ٢٠٢٢ - المعادي
+
+                                            <p class="mb-0 pt-1"> <img src="/assits/imgs/seenIcon.svg" alt="seenIcon">20
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="/assits/imgs/featureAdr1.png" class="card-img-top" alt="..." />
+                                        <div class="icons_container">
+                                            <div class="star_icon_container">
+                                                <img src="/assits/imgs//starIcon.svg" class="star_icon"
+                                                    alt="starIcon" />
+                                            </div>
+                                            <img src="/assits/imgs/editads.svg" alt="editads" class=" mt-2">
+                                            <img src="/assits/imgs/deleteAds.svg" alt="deleteAds" class="mx-2 mt-2">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card_title">
+                                                <div>
+                                                    <img src="/assits/imgs/heart.png" alt="heart" class="heart_img" />
+                                                </div>
+                                                <div>
+                                                    <p>Kia sportag 2019</p>
+                                                </div>
+                                            </div>
+                                            <p class="card_price">490,500 EGP</p>
+
+                                            <div class="d-flex justify-content-between card_text">
+                                                <div class="d-flex">
+                                                    <p>2014</p>
+                                                    <div class="date_icon"></div>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p>Yaris</p>
+                                                    <div class="date_icon"></div>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p>Toyota</p>
+                                                    <div class="date_icon"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card_footer d-flex justify-content-between">١٩ فبراير ٢٠٢٢ - المعادي
+
+                                            <p class="mb-0 pt-1"> <img src="/assits/imgs/seenIcon.svg" alt="seenIcon">20
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+   <!-- --------------------------------deleteModal-------------------------------------->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-body text-center">
+                <img src="/assits/imgs/deleteImg.svg" alt="deleteImg">
+                <h6>حذف الإعلان</h6>
+                <p>هل انت متأكد انك تريد حذف هذا الإعلا؟</p>
+            </div>
+            <div class="m-auto pb-3">
+                <button type="button" class=" btn-secondary py-2" data-bs-dismiss="modal">نعم حذف</button>
+                <button type="button" class=" btn-primary py-2">لا إلغاء</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-------------------------footer--------------------------------------------->
+    <div class="lower_footer text-center bg-white">
+
+        <div class="container border-top p-3">
+            حقوق الطبع والنشر 2022 - جميع الحقوق محفوظة لـ Taswiq4U
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".privacy").click(function () {
+                $("#ads_container").hide();
+                $("#fav_ads_container").hide();
+                $("#bundle_container").hide();
+                $("#change_pass").hide();
+                $("#privacy_container").show();
+                $(".fav_ads_title").removeClass("bg_side_bar");
+                $(".change_pass").removeClass("bg_side_bar");
+                $(".adv_title").removeClass("bg_side_bar");
+                $(".bundle_title").removeClass("bg_side_bar");
+                $('.privacy').addClass("bg_side_bar");
+
+
+            });
+            $(".change_pass").click(function () {
+                $("#privacy_container").hide();
+                $("#ads_container").hide();
+                $("#fav_ads_container").hide();
+                $("#bundle_container").hide();
+                $("#privacy_container").hide();
+                $("#change_pass").show();
+                $(".privacy").removeClass("bg_side_bar");
+                $(".adv_title").removeClass("bg_side_bar");
+                $(".bundle_title").removeClass("bg_side_bar");
+                $(".fav_ads_title").removeClass("bg_side_bar");
+                $('.change_pass').addClass("bg_side_bar");
+            });
+            $(".adv_title").click(function () {
+                $("#fav_ads_container").hide();
+                $("#bundle_container").hide();
+                $("#change_pass").hide();
+                $("#privacy_container").hide();
+                $("#ads_container").show();
+                $(".privacy").removeClass("bg_side_bar");
+                $(".change_pass").removeClass("bg_side_bar");
+                $(".bundle_title").removeClass("bg_side_bar");
+                $(".fav_ads_title").removeClass("bg_side_bar");
+                $('.adv_title').addClass("bg_side_bar");
+
+
+            });
+            $(".bundle_title").click(function () {
+                $("#fav_ads_container").hide();
+                $("#change_pass").hide();
+                $("#privacy_container").hide();
+                $("#ads_container").hide();
+                $("#bundle_container").show();
+                $(".privacy").removeClass("bg_side_bar");
+                $(".change_pass").removeClass("bg_side_bar");
+                $(".adv_title").removeClass("bg_side_bar");
+                $(".fav_ads_title").removeClass("bg_side_bar");
+                $('.bundle_title').addClass("bg_side_bar");
+
+
+            });
+            $(".fav_ads_title").click(function () {
+                $("#bundle_container").hide();
+                $("#change_pass").hide();
+                $("#privacy_container").hide();
+                $("#ads_container").hide();
+                $("#fav_ads_container").show();
+                $(".privacy").removeClass("bg_side_bar");
+                $(".change_pass").removeClass("bg_side_bar");
+                $(".adv_title").removeClass("bg_side_bar");
+                $(".bundle_title").removeClass("bg_side_bar");
+                $('.fav_ads_title').addClass("bg_side_bar");
+
+
+            });
+        });
+    </script>
+</body>
+<script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+        utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+</script>
+
+</html>

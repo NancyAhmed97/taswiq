@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!---------googleFont----------------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Tajawal:wght@200;300;400;500;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
+    integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/assits/css/index_style.css" />
+
+  <title>Document</title>
+</head>
+
+<body>
+  <!-----------------------------navbar------------------------------------------->
+  <div class="header_nav">
+    <div class="container">
+      <div class="d-flex justify-content-between py-2">
+        <div>
+          <a href="/signup.html" class="login_link">تسجيل الدخول</a>
+          <img src="/assits/imgs/facebook.png" alt="facebook" class="facebook_img">
+          <img src="/assits/imgs/instgram.png" alt="instgram" class="instgram_img">
+          <img src="/assits/imgs/twitter.png" alt="twitter" class="twitter_img">
+        </div>
+        <div class="d-flex">
+          <p class="lang mb-0">
+            <a class="lang" href="/home.html">English</a>
+
+          </p>
+          <div class="dropdow mx-2">
+            <button class="btn  dropdown-toggle p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              مصر <img src="/assits/imgs/egypt_flag.png" alt="egypt_flag" class="egypt_flag"> </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="d-flex ">
+          <div class="add_ads d-flex justify-content-center">
+            إضافة إعلان
+            <img src="/assits/imgs/add_img.png" class="add_img" alt="add_img">
+          </div>
+        </div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-0 w-100 d-flex justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/contactus.html">تواصل معنا</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">العروض</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              جميع التصنيفات
+            </a>
+            <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/en/home.html" tabindex="-1" aria-disabled="true">الرئيسية</a>
+          </li>
+        </ul>
+
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="/en/home.html">
+        <img src="/assits/imgs/logo.png" alt="logo" class="logo" />
+      </a>
+
+
+    </div>
+  </nav>
+  <!-----------------------------landing page--------------------------------------->
+  <div class="landing_container bg-white"></div>
+  <!-------------------------------Search bar--------------------------------------->
+  <div class="bg-white">
+    <div class="container">
+      <div class="search_bar">
+        <div class="row">
+          <div class="col-xs-1 my-2 search_container">
+            <div class="search_box">
+              <img src="/assits/imgs/searchIcon.svg" alt="searchIcon">
+            </div>
+          </div>
+          <div class="col-md-5 my-2 p-0 col-xs-10">
+            <input placeholder="ابحث عن ماتريده" type="text" class="text-left">
+          </div>
+          <div class="col-md-3 my-2">
+            <div class="dropdown_country w-100">
+              <button class="btn dropdown-toggle w-100 d-flex justify-content-between  text-left" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                حدد الفئة
+              </button>
+              <ul class="dropdown-menu w-75" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 pr-0 my-2">
+            <div class="dropdown_country w-100">
+              <button class="btn dropdown-toggle w-100 d-flex justify-content-between" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                حدد الدولة </button>
+              <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-1 search_button">
+            <button class="w-100 search_btn">search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-------------------------------All categories section--------------------------->
+  <section class="all_categories_container">
+    <div class="container">
+      <h1 class="title_section">جميع الفئات</h1>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="category_container">
+            <img src="/assits/imgs/categoury1.svg" alt="" class="category_img">
+            <p class="category_name">أطفال</p>
+            <p class="number_ads">128 ads</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="category_container">
+            <img src="/assits/imgs/categoury2.svg" alt="" class="category_img">
+            <p class="category_name">موضة</p>
+            <p class="number_ads">128 ads</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="category_container">
+            <img src="/assits/imgs/categoury3.svg" alt="" class="category_img">
+            <p class="category_name">إلكترونيات</p>
+            <p class="number_ads">128 ads</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="category_container">
+            <img src="/assits/imgs/categoury4.svg" alt="" class="category_img">
+            <p class="category_name">هواتف نقالة</p>
+            <p class="number_ads">128 ads</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="category_container">
+            <img src="/assits/imgs/categoury5.svg" alt="" class="category_img">
+            <p class="category_name">العقارات</p>
+            <p class="number_ads">128 ads</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="category_container">
+            <img src="/assits/imgs/categoury5.svg" alt="" class="category_img">
+            <p class="category_name">السيارات والمركبات</p>
+            <p class="number_ads">128 ads</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="category_container mt-3">
+            <img src="/assits/imgs/categoury6.svg" alt="" class="category_img">
+            <p class="category_name">الخدمات</p>
+            <p class="number_ads">128 ads</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="category_container mt-3">
+            <img src="/assits/imgs/categoury7.svg" alt="" class="category_img">
+            <p class="category_name">المقاولات العامة</p>
+            <p class="number_ads">128 ads</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="category_container mt-3">
+            <img src="/assits/imgs/categoury8.svg" alt="" class="category_img">
+            <p class="category_name">معدات رياضية</p>
+            <p class="number_ads">128 ads</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="category_container mt-3">
+            <img src="/assits/imgs/categoury9.svg" alt="" class="category_img">
+            <p class="category_name"> وظائف</p>
+            <p class="number_ads">128 ads</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="category_container mt-3">
+            <img src="/assits/imgs/categoury10.svg" alt="" class="category_img">
+            <p class="category_name"> حيوانات أليفة</p>
+            <p class="number_ads">128 ads</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="category_container mt-3">
+            <img src="/assits/imgs/categoury11.svg" alt="" class="category_img">
+            <p class="category_name">الأثاث</p>
+            <p class="number_ads">128 ads</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="category_container mt-3">
+            <img src="/assits/imgs/categoury12.svg" alt="" class="category_img">
+            <p class="category_name">ألعاب الفيديو</p>
+            <p class="number_ads">128 ads</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="category_container mt-3">
+            <img src="/assits/imgs/categoury13.svg" alt="" class="category_img">
+            <p class="category_name">التعليم </p>
+            <p class="number_ads">128 ads</p>
+          </div>
+        </div>
+      </div>
+
+  </section>
+  <!-------------------------------Featured ads section------------------->
+  <section class="featured_ads_container">
+    <div class="container">
+      <h1 class="title_section">إعلانات مميزة</h1>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="/assits/imgs/featureAdr1.png" class="card-img-top" alt="..." />
+            <div class="star_icon_container">
+              <img src="/assits/imgs//starIcon.svg" class="star_icon" alt="starIcon" />
+            </div>
+            <div class="card-body">
+              <div class="card_title">
+                <div>
+                  <img src="/assits/imgs/heart.png" alt="heart" class="heart_img" />
+                </div>
+                <div>
+                  <p>Kia sportag 2019</p>
+                </div>
+              </div>
+              <p class="card_price">490,500 EGP</p>
+
+              <div class="d-flex justify-content-between card_text">
+                <div class="d-flex">
+                  <p>2014</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Yaris</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Toyota</p>
+                  <div class="date_icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card_footer">١٩ فبراير ٢٠٢٢ - المعادي</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="/assits/imgs/featureAdr2.png" class="card-img-top" alt="..." />
+            <div class="star_icon_container">
+              <img src="/assits/imgs//starIcon.svg" class="star_icon" alt="starIcon" />
+            </div>
+            <div class="card-body">
+              <div class="card_title">
+                <div>
+                  <img src="/assits/imgs/heart.png" alt="heart" class="heart_img" />
+                </div>
+                <div>
+                  <p>Kia sportag 2019</p>
+                </div>
+              </div>
+              <p class="card_price">490,500 EGP</p>
+
+              <div class="d-flex justify-content-between card_text">
+                <div class="d-flex">
+                  <p>2014</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Yaris</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Toyota</p>
+                  <div class="date_icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card_footer">١٩ فبراير ٢٠٢٢ - المعادي</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="/assits/imgs/featureAdr3.png" class="card-img-top" alt="..." />
+            <div class="star_icon_container">
+              <img src="/assits/imgs//starIcon.svg" class="star_icon" alt="starIcon" />
+            </div>
+            <div class="card-body">
+              <div class="card_title">
+                <div>
+                  <img src="/assits/imgs/heart.png" alt="heart" class="heart_img" />
+                </div>
+                <div>
+                  <p>Kia sportag 2019</p>
+                </div>
+              </div>
+              <p class="card_price">490,500 EGP</p>
+              <div class="d-flex justify-content-between card_text">
+                <div class="d-flex">
+                  <p>2014</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Yaris</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Toyota</p>
+                  <div class="date_icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card_footer">١٩ فبراير ٢٠٢٢ - المعادي</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="/assits/imgs/featureAdr4.png" class="card-img-top" alt="..." />
+            <div class="star_icon_container">
+              <img src="/assits/imgs//starIcon.svg" class="star_icon" alt="starIcon" />
+            </div>
+            <div class="card-body">
+              <div class="card_title">
+                <div>
+                  <img src="/assits/imgs/heart.png" alt="heart" class="heart_img" />
+                </div>
+                <div>
+                  <p>Kia sportag 2019</p>
+                </div>
+              </div>
+              <p class="card_price">490,500 EGP</p>
+
+              <div class="d-flex justify-content-between card_text">
+                <div class="d-flex">
+                  <p>2014</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Yaris</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Toyota</p>
+                  <div class="date_icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card_footer">١٩ فبراير ٢٠٢٢ - المعادي</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!------------------------------Latest ads section------------------------>
+  <section class="latest_ads_container ">
+    <div class="container">
+      <h1 class="title_section">أحدث الإعلانات</h1>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="/assits/imgs/recentAds11.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card_title">
+                <div>
+                  <img src="/assits/imgs/heart.png" alt="heart" class="heart_img" />
+                </div>
+                <div>
+                  <p>Kia sportag 2019</p>
+                </div>
+              </div>
+              <p class="card_price">490,500 EGP</p>
+
+              <div class="d-flex justify-content-between card_text">
+                <div class="d-flex">
+                  <p>2014</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Yaris</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Toyota</p>
+                  <div class="date_icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card_footer">١٩ فبراير ٢٠٢٢ - المعادي</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="/assits/imgs/featureAdr3.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card_title">
+                <div>
+                  <img src="/assits/imgs/heart.png" alt="heart" class="heart_img" />
+                </div>
+                <div>
+                  <p>Kia sportag 2019</p>
+                </div>
+              </div>
+              <p class="card_price">490,500 EGP</p>
+
+              <div class="d-flex justify-content-between card_text">
+                <div class="d-flex">
+                  <p>2014</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Yaris</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Toyota</p>
+                  <div class="date_icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card_footer">١٩ فبراير ٢٠٢٢ - المعادي</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="/assits/imgs/recentads8.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card_title">
+                <div>
+                  <img src="/assits/imgs/heart.png" alt="heart" class="heart_img" />
+                </div>
+                <div>
+                  <p>Kia sportag 2019</p>
+                </div>
+              </div>
+              <p class="card_price">490,500 EGP</p>
+
+              <div class="d-flex justify-content-between card_text">
+                <div class="d-flex">
+                  <p>2014</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Yaris</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Toyota</p>
+                  <div class="date_icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card_footer">١٩ فبراير ٢٠٢٢ - المعادي</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="/assits/imgs/featureAdr2.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card_title">
+                <div>
+                  <img src="/assits/imgs/heart.png" alt="heart" class="heart_img" />
+                </div>
+                <div>
+                  <p>Kia sportag 2019</p>
+                </div>
+              </div>
+              <p class="card_price">490,500 EGP</p>
+
+              <div class="d-flex justify-content-between card_text">
+                <div class="d-flex">
+                  <p>2014</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Yaris</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Toyota</p>
+                  <div class="date_icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card_footer">١٩ فبراير ٢٠٢٢ - المعادي</div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card">
+            <img src="/assits/imgs/featureAdr1.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card_title">
+                <div>
+                  <img src="/assits/imgs/heart.png" alt="heart" class="heart_img" />
+                </div>
+                <div>
+                  <p>Kia sportag 2019</p>
+                </div>
+              </div>
+              <p class="card_price">490,500 EGP</p>
+
+              <div class="d-flex justify-content-between card_text">
+                <div class="d-flex">
+                  <p>2014</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Yaris</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Toyota</p>
+                  <div class="date_icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card_footer">١٩ فبراير ٢٠٢٢ - المعادي</div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card">
+            <img src="/assits/imgs/recentAds11.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card_title">
+                <div>
+                  <img src="/assits/imgs/heart.png" alt="heart" class="heart_img" />
+                </div>
+                <div>
+                  <p>Kia sportag 2019</p>
+                </div>
+              </div>
+              <p class="card_price">490,500 EGP</p>
+
+              <div class="d-flex justify-content-between card_text">
+                <div class="d-flex">
+                  <p>2014</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Yaris</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Toyota</p>
+                  <div class="date_icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card_footer">١٩ فبراير ٢٠٢٢ - المعادي</div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card">
+            <img src="/assits/imgs/featureAdr3.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card_title">
+                <div>
+                  <img src="/assits/imgs/heart.png" alt="heart" class="heart_img" />
+                </div>
+                <div>
+                  <p>Kia sportag 2019</p>
+                </div>
+              </div>
+              <p class="card_price">490,500 EGP</p>
+
+              <div class="d-flex justify-content-between card_text">
+                <div class="d-flex">
+                  <p>2014</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Yaris</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Toyota</p>
+                  <div class="date_icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card_footer">١٩ فبراير ٢٠٢٢ - المعادي</div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card">
+            <img src="/assits/imgs/recentads8.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card_title">
+                <div>
+                  <img src="/assits/imgs/heart.png" alt="heart" class="heart_img" />
+                </div>
+                <div>
+                  <p>Kia sportag 2019</p>
+                </div>
+              </div>
+              <p class="card_price">490,500 EGP</p>
+
+              <div class="d-flex justify-content-between card_text">
+                <div class="d-flex">
+                  <p>2014</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Yaris</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Toyota</p>
+                  <div class="date_icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card_footer">١٩ فبراير ٢٠٢٢ - المعادي</div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card">
+            <img src="/assits/imgs/featureAdr2.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card_title">
+                <div>
+                  <img src="/assits/imgs/heart.png" alt="heart" class="heart_img" />
+                </div>
+                <div>
+                  <p>Kia sportag 2019</p>
+                </div>
+              </div>
+              <p class="card_price">490,500 EGP</p>
+
+              <div class="d-flex justify-content-between card_text">
+                <div class="d-flex">
+                  <p>2014</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Yaris</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Toyota</p>
+                  <div class="date_icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card_footer">١٩ فبراير ٢٠٢٢ - المعادي</div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card">
+            <img src="/assits/imgs/featureAdr1.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card_title">
+                <div>
+                  <img src="/assits/imgs/heart.png" alt="heart" class="heart_img" />
+                </div>
+                <div>
+                  <p>Kia sportag 2019</p>
+                </div>
+              </div>
+              <p class="card_price">490,500 EGP</p>
+
+              <div class="d-flex justify-content-between card_text">
+                <div class="d-flex">
+                  <p>2014</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Yaris</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Toyota</p>
+                  <div class="date_icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card_footer">١٩ فبراير ٢٠٢٢ - المعادي</div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card">
+            <img src="/assits/imgs/recentAds11.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card_title">
+                <div>
+                  <img src="/assits/imgs/heart.png" alt="heart" class="heart_img" />
+                </div>
+                <div>
+                  <p>Kia sportag 2019</p>
+                </div>
+              </div>
+              <p class="card_price">490,500 EGP</p>
+
+              <div class="d-flex justify-content-between card_text">
+                <div class="d-flex">
+                  <p>2014</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Yaris</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Toyota</p>
+                  <div class="date_icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card_footer">١٩ فبراير ٢٠٢٢ - المعادي</div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card">
+            <img src="/assits/imgs/featureAdr3.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="card_title">
+                <div>
+                  <img src="/assits/imgs/heart.png" alt="heart" class="heart_img" />
+                </div>
+                <div>
+                  <p>Kia sportag 2019</p>
+                </div>
+              </div>
+              <p class="card_price">490,500 EGP</p>
+
+              <div class="d-flex justify-content-between card_text">
+                <div class="d-flex">
+                  <p>2014</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Yaris</p>
+                  <div class="date_icon"></div>
+                </div>
+                <div class="d-flex">
+                  <p>Toyota</p>
+                  <div class="date_icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card_footer">١٩ فبراير ٢٠٢٢ - المعادي</div>
+          </div>
+        </div>
+      </div>
+
+
+      <nav aria-label="..." class="mt-5 d-flex justify-content-center">
+        <ul class="pagination">
+
+          <li class="page-item disabled">
+            <span class="page-link ">
+              <img src="/assits/imgs/prevArrow.png" alt="prevArrow" class="prevArrow">
+            </span>
+          </li>
+          <li class="page-item mx-2"><a class="page-link" href="#">3</a></li>
+          <li class="page-item mx-2" aria-current="page">
+            <span class="page-link">2</span>
+          </li>
+          <li class="page-item active mx-2"><a class="page-link" href="#">1</a></li>
+
+
+        </ul>
+      </nav>
+
+    </div>
+  </section>
+  <!------------------------------download Section--------------------------->
+<!--------------------------------footer------------------------------------->
+<div class="footer py-5" dir="rtl">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 p-0 text-right">
+        <h6>Follow Us</h6>
+        <ul class="p-0">
+          <li class="d-inline-block"><img src="/assits/imgs/linkidin.svg" class="linkidin" alt="linkidin"></li>
+          <li class="d-inline-block"><img src="/assits/imgs/twitter.svg" class="twitter" alt="twitter"></li>
+          <li class="d-inline-block"><img src="/assits/imgs/facebook.svg" alt="facebook" class="facebook"></li>
+        </ul>
+        <ul class="p-0">
+          <li class="d-inline-block"><img src="/assits/imgs/appstore.svg" class="appstore" alt="appstore"></li>
+          <li class="d-inline-block"><img src="/assits/imgs/googlePlay.svg" class="googlePlay" alt="googlePlay"></li>
+        </ul>
+      </div>
+      <div class="col-md-6 imp_link ">
+        <h6 class="text-right mr-5">Categories</h6>
+        <div class="row justify-content-end px-3">
+          <div class="col-md-3 p-0">
+            <p>Sports Equipments</p>
+            <p>General Constructing</p>
+            <p>Services</p>
+            <p>Education</p>
+          </div>
+          <div class="col-md-3 p-0 imp_link_middle">
+            <p><a>Fashion</a></p>
+            <p>Baby</p>
+            <p>Pets</p>
+            <p>Jobs</p>
+            <p>Furniture</p>
+
+          </div>
+          <div class="col-md-3 p-0">
+
+            <p><a>Cars & Vehicles</a></p>
+            <p>Properties</p>
+            <p>Mobile Phones</p>
+            <p>Electronics</p>
+            <p>Video Games</p>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-3 follow_us text-right">
+        <h6>About Us</h6>
+        <p ><a href="/en/privacy.html">Privacy Policy</a></p>
+        <p ><a>FAQ</a></p>
+        <p class="ml-2"><a href="/en/safteyRules.html">Safety Rules</a></p>
+        <p class="ml-2"><a href="/en/terms.html">Terms of use</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
