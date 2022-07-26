@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 
 
 <head>
@@ -23,114 +23,133 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
         integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/assits/css/index_style.css" />
+    <link rel="stylesheet" href="assits/css/index_style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <title>Document</title>
-</head>
+    <style>
+        .iti__selected-flag {
+            z-index: 1;
+            position: relative;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 0 6px 0 8px;
+            justify-content: flex-start !important;
+            flex-direction: row-reverse !important;
+        }
 
+        .iti--allow-dropdown .iti__flag-container,
+        .iti--separate-dial-code .iti__flag-container {
+            right: 0 !important;
+            left: 0;
+        }
+
+        .iti__flag.iti__us {
+            margin: 0 7px;
+        }
+    </style>
+</head>
 <body>
     <!-----------------------------navbar------------------------------------------->
     <div class="header_nav">
         <div class="container">
-            <div class="d-flex justify-content-between py-2">
-                <div>
-                    <a href="" class="login_link">تسجيل الدخول</a>
-                    <img src="assits/imgs/facebook.png" alt="facebook" class="facebook_img" />
-                    <img src="assits/imgs/instgram.png" alt="instgram" class="instgram_img" />
-                    <img src="assits/imgs/twitter.png" alt="twitter" class="twitter_img" />
-                </div>
-                <div class="d-flex">
-                    <p class=" mb-0">
-                        <a class="lang" href="/en/signup.html">English</a>
-
-                    </p>
-                    <div class="dropdow mx-2">
-                        <button class="btn dropdown-toggle p-0" type="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            مصر
-                            <img src="assits/imgs/egypt_flag.png" alt="egypt_flag" class="egypt_flag" />
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+          <div class="d-flex justify-content-between py-2">
+            <div>
+              <a href="/signup.html" class="login_link">تسجيل الدخول</a>
+              <img src="assits/imgs/facebook.png" alt="facebook" class="facebook_img">
+              <img src="assits/imgs/instgram.png" alt="instgram" class="instgram_img">
+              <img src="assits/imgs/twitter.png" alt="twitter" class="twitter_img">
             </div>
-        </div>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="d-flex">
-                    <div class="add_ads d-flex justify-content-center">
-                        إضافة إعلان
-                        <img src="assits/imgs/add_img.png" class="add_img" alt="add_img" />
-                    </div>
-                </div>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-0 w-100 d-flex justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="/contactus.html">تواصل معنا</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">العروض</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            جميع التصنيفات
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/home.html" tabindex="-1" aria-disabled="true">الرئيسية</a>
-                    </li>
+            <div class="d-flex">
+              <p class=" mb-0">
+                  <a class="lang text-muted" href="/en/home.html">English</a>
+              </p>
+              <div class="dropdow mx-2">
+                <button class="btn  dropdown-toggle p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  مصر <img src="assits/imgs/egypt_flag.png" alt="egypt_flag" class="egypt_flag"> </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
+              </div>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-                <img src="assits/imgs/logo.png" alt="logo" class="logo" />
-            </a>
+          </div>
         </div>
-    </nav>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ">
+              <div class="add_ads d-flex justify-content-center">
+                <a href="/addAds.html" class="text-white">
+                إضافة إعلان
+              </a>
+                <img src="assits/imgs/add_img.png" class="add_img" alt="add_img">
+              </div>
+            </div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-0 w-100 d-flex justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="/contactus.html">تواصل معنا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Offers.html">العروض</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  جميع التصنيفات
+                </a>
+                <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="/home.html" tabindex="-1" aria-disabled="true">الرئيسية</a>
+              </li>
+            </ul>
+    
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="/home.html">
+            <img src="assits/imgs/logo.png" alt="logo" class="logo" />
+          </a>
+    
+    
+        </div>
+      </nav>
     <!----------------------------loginContainer----------------------------------->
     <div class="signup_container">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <h1 class="signup_title mb-3">دعنا نبدأ</h1>
+                <div class="col-md-6 ">
+                    <h1 class="signup_title mb-3 ">دعنا نبدأ</h1>
                     <form class="signup_form">
-                        <label>الاسم بالكامل</label>
+                        <label class="login_label">الاسم بالكامل</label>
                         <input type="text">
-                        <label class="mt-3">رقم الجوال * </label>
+                        <label class="mt-3 login_label">رقم الجوال * </label>
                         <form id="login" onsubmit="process(event)" class="w-100 my-3 ar_form">
-                            <input id="phone" type="tel" name="phone" class="w-100 text-center" />
+                            <input id="phone" type="tel" name="phone" class="w-100 text-left"
+                                style="padding-right: 55px !important" />
                         </form>
-                        <label class="mt-3">اختار الدولة</label>
+                        <label class="mt-3 login_label">اختار الدولة</label>
                         <br>
                         <select class="w-100">
                             <option>Egypt</option>
                         </select>
                         <br>
-                        <label class="mt-3">كلمة المرور</label>
+                        <label class="mt-3 login_label">كلمة المرور</label>
                         <input type="password" class="signup_input">
-                        <label class="mt-3">تأكيد كلمة المرور</label>
+                        <label class="mt-3 login_label">تأكيد كلمة المرور</label>
                         <input type="password" class="signup_input">
                         <div class="text-center w-100 button_container">
                             <p>بالتسجيل في تسوق فور يو، فإنك توافق على شروط الاستخدام</p>
@@ -139,7 +158,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" style="margin-top:8% ;">
                     <div class="img_container">
                         <img src="assits/imgs/loginImg.svg" class="" alt="login_img">
                     </div>

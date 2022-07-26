@@ -22,7 +22,6 @@ button:focus {
 
 .btn:hover {
   color: #fff;
-
 }
 
 .title_section {
@@ -98,8 +97,10 @@ button:focus {
 }
 
 .landing_container {
-  background: transparent url("../../assits/imgs/Landing_img.png") 0% 0% no-repeat padding-box;
-  height: 450px;
+  background: transparent url("../imgs/Landing_img.png") 50% 50%
+    no-repeat padding-box;
+    background-size: cover !important;
+  height: 550px;
   background-size: contain;
 }
 
@@ -130,7 +131,6 @@ select {
   color: #818391;
   font-size: 12px;
   border-radius: 12px;
-
 }
 
 .ar_form .iti__arrow {
@@ -149,7 +149,6 @@ select {
 
 .iti--allow-dropdown {
   width: 100% !important;
-
 }
 
 .login_link {
@@ -191,7 +190,6 @@ select {
   padding-left: 7px;
   border-left: 1px solid #eee;
   margin-top: 7px;
-
 }
 
 .egypt_flag {
@@ -228,7 +226,6 @@ select {
   border-radius: 5px;
   margin-left: 15px !important;
   margin-right: 15px !important;
-
 }
 
 .search_bar .search_box img {
@@ -293,7 +290,6 @@ select {
 
 .search_bar button:hover {
   color: #000;
-
 }
 
 .page-link:first-child {
@@ -327,6 +323,9 @@ select {
   display: flex;
   justify-content: space-between;
 }
+.featured_ads_container a,
+.latest_ads_container a {
+text-decoration: none;}
 
 .featured_ads_container .heart_img,
 .latest_ads_container .heart_img {
@@ -361,6 +360,7 @@ select {
   right: 10px;
   top: 10px;
 }
+
 .featured_ads_container .ar_star_icon_container {
   width: 30px;
   height: 30px;
@@ -443,7 +443,7 @@ select {
 
 /***********************footer***************************/
 .footer {
-  background-color: #F6F8FA !important;
+  background-color: #f6f8fa !important;
 }
 
 .footer .footerLogo {
@@ -463,8 +463,6 @@ select {
   color: #818391;
   font-size: 12px;
   font-family: "Tajawal", sans-serif;
-
-
 }
 
 .imp_link_middle p {
@@ -512,7 +510,6 @@ select {
 
   .downloadImg {
     position: static;
-
   }
 
   .download_container p {
@@ -520,7 +517,9 @@ select {
   }
 
   .landing_container {
-    background: transparent url("../../assits/imgs/Landing_img.png") 0% 0% no-repeat padding-box;
+    background: transparent url("../imgs/Landing_img.png") 50% 50%
+    no-repeat padding-box;
+    background-size: cover !important;
     height: 160px;
     background-size: contain;
   }
@@ -569,7 +568,6 @@ select {
   font-family: "Merriweather", serif;
   font-weight: 400;
   text-align: left;
-
 }
 
 .ar_setpassword_title {
@@ -578,10 +576,11 @@ select {
   font-family: "Merriweather", serif;
   font-weight: 400;
   text-align: right;
-
 }
 
-.login_form label {
+.login_form label ,
+.login_label
+{
   color: #333333;
   font-size: 14px;
   font-family: "Tajawal", sans-serif;
@@ -618,7 +617,6 @@ select {
   color: #333333;
   font-size: 12px;
   font-family: "Tajawal", sans-serif;
-
 }
 
 .button_container a {
@@ -626,11 +624,9 @@ select {
   font-size: 12px;
   font-family: "Tajawal", sans-serif;
   cursor: pointer;
-
 }
 
 .login_container .img_container {
-
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -660,7 +656,7 @@ select {
 }
 
 .login_container .forget_password {
-  color: #2D3142;
+  color: #2d3142;
   font-size: 12px;
   font-family: "Tajawal", sans-serif;
   margin-bottom: 45px;
@@ -668,8 +664,7 @@ select {
 
 .login_container .forget_password a {
   cursor: pointer;
-  color: #2D3142;
-
+  color: #2d3142;
 }
 
 .signup_container {
@@ -700,11 +695,9 @@ select {
   border-radius: 12px !important;
   padding: 0.65rem !important;
   margin-bottom: 16px !important;
-
 }
 
 .signup_container .img_container {
-
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -713,7 +706,6 @@ select {
 }
 
 .signup_container .ar_img_container {
-
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -730,8 +722,7 @@ select {
   width: 400px;
   height: 390px;
 }
-
-/*******************************Privacy*******************/
+/****************************Privacy*******************/
 .chat,
 .account_container {
   border-right: 1px solid #eee;
@@ -761,7 +752,6 @@ select {
 
 .ar_account_container {
   margin-left: 15px;
-
 }
 
 .ar_account_container .dropdown-toggle::after {
@@ -776,13 +766,13 @@ select {
 }
 
 .section_title {
-  background: #F6F8FA;
+  background: #f6f8fa;
   text-align: left;
   padding: 18px 0;
 }
 
 .ar_section_title {
-  background: #F6F8FA;
+  background: #f6f8fa;
   text-align: right;
   padding: 18px 0;
 }
@@ -814,7 +804,6 @@ select {
 .ar_terms_container {
   background-color: #fff;
   text-align: left;
-
 }
 
 .privacy_container p:first-of-type {
@@ -843,7 +832,6 @@ select {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   font-size: 19px;
-
 }
 
 .ar_privacy_container h1,
@@ -852,32 +840,29 @@ select {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   font-size: 19px;
-
 }
 
 .privacy_container ul li {
   list-style: disc;
-  color: #2F3941;
+  color: #2f3941;
   font-family: "Rubik", sans-serif;
   font-weight: 300;
   font-size: 14px;
   margin-bottom: 10px;
-
 }
 
 .ar_privacy_container ul li,
 .ar_terms_container ul li {
   list-style: disc;
-  color: #2F3941;
+  color: #2f3941;
   font-family: "Rubik", sans-serif;
   font-weight: 300;
   font-size: 14px;
   margin-bottom: 10px;
-
 }
 
 .privacy_container p {
-  color: #2F3941;
+  color: #2f3941;
   font-family: "Rubik", sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -885,7 +870,7 @@ select {
 
 .ar_privacy_container p,
 .ar_terms_container p {
-  color: #2F3941;
+  color: #2f3941;
   font-family: "Rubik", sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -904,7 +889,8 @@ select {
   text-align: left;
 }
 
-.contactus_container textarea , textarea{
+.contactus_container textarea,
+textarea {
   resize: none;
   width: 100%;
   text-align: left;
@@ -929,14 +915,12 @@ select {
 .contactus_container h3 {
   font-size: 15px !important;
   font-family: "Tajawal", sans-serif;
-
 }
 
 .contactus_container p {
   color: #555555;
   font-size: 12px;
   font-family: "Merriweather", serif;
-
 }
 
 .ar_form .iti__flag-container {
@@ -952,14 +936,13 @@ select {
   border: none;
   font-size: 14px;
   font-family: "Rubik", sans-serif;
-  color: #2D3142;
+  color: #2d3142;
 }
 
 .ar_faq_container p {
-  color: #49545D;
+  color: #49545d;
   font-size: 12px;
   font-family: "Rubik", sans-serif;
-
 }
 
 /*******************************profile_container**************************/
@@ -987,14 +970,13 @@ select {
 .fav_ads_title {
   font-size: 14px;
   font-family: "Tajawal", sans-serif;
-  color: #2D3142;
-
+  color: #2d3142;
 }
 
 .bg_side_bar {
   font-size: 14px;
   font-family: "Tajawal", sans-serif;
-  color: #2D3142;
+  color: #2d3142;
   background-color: #f8f9fa;
 }
 
@@ -1021,19 +1003,18 @@ select {
   font-size: 22px;
   font-family: "Tajawal", sans-serif;
   font-weight: 600;
-
 }
 
 .save_change_btn {
-  color: #CAD1E0;
-  background-color: #F0F1F4;
+  color: #cad1e0;
+  background-color: #f0f1f4;
   font-family: "Tajawal", sans-serif;
   font-size: 15px;
   border: none;
 }
 
 .save_btn {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #53b553;
   font-family: "Tajawal", sans-serif;
   font-size: 15px;
@@ -1062,114 +1043,421 @@ select {
   background-color: transparent !important;
   color: #818391;
   cursor: auto;
-
 }
 
 .ar_chage_pass_container .featured_ads_container {
   padding-top: 0px;
 }
-#exampleModal{
-  top:20% !important;
-  width:360px;
-  right:35%;
-}
-#exampleModal .modal-content{
-  border-radius:30px !important;
 
+#exampleModal {
+  top: 20% !important;
+  width: 360px;
+  right: 35%;
 }
-#exampleModal img{
-  width:150px !important;
-  height:120px !important;
+
+#exampleModal .modal-content {
+  border-radius: 30px !important;
 }
-#exampleModal h6{
-  color:#1B1D1F;
+
+#exampleModal img {
+  width: 150px !important;
+  height: 120px !important;
+}
+
+#exampleModal h6 {
+  color: #1b1d1f;
   font-family: "Rubik", sans-serif;
-font-size: 22px;
+  font-size: 22px;
 }
-#exampleModal p{
+
+#exampleModal p {
   font-family: "Rubik", sans-serif;
-color:#828894;
-font-size:14px;
+  color: #828894;
+  font-size: 14px;
 }
-#exampleModal button{
-  width:120px;
+
+#exampleModal button {
+  width: 120px;
 }
-#exampleModal .btn-secondary{
+
+#exampleModal .btn-secondary {
   background-color: #53b553;
   border: 1px solid #53b553;
   font-family: "Merriweather", serif;
   font-size: 14px;
-  
 }
-#exampleModal .btn-secondary:hover{
-  background-color:transparent  !important;
-  border: 1px solid #53b553 !important;
-  color:#53b553;
 
+#exampleModal .btn-secondary:hover {
+  background-color: transparent !important;
+  border: 1px solid #53b553 !important;
+  color: #53b553;
 }
+
 #exampleModal .btn-primary {
-  background-color:transparent  !important;
+  background-color: transparent !important;
   border: 1px solid #53b553;
-  color:#53b553;
+  color: #53b553;
   font-family: "Merriweather", serif;
-font-size: 14px;
+  font-size: 14px;
 }
+
 #exampleModal .btn-primary:hover {
   background-color: #53b553 !important;
-  color:#fff;
-
+  color: #fff;
 }
+
 /******************lower_footer *******************************/
 .lower_footer {
   color: #818391;
   font-size: 12px;
   font-family: "Tajawal", sans-serif;
-
 }
+
 /***********************edit your ads**************************************/
-.Breadcrumb p{
+.Breadcrumb p {
   color: #818391;
   font-size: 12px;
   font-family: "Tajawal", sans-serif;
-margin-top: 15px;
+  margin-top: 15px;
 }
-.Change_category a{
-  color:#040707;
-  text-decoration:underline;
+
+.Change_category a {
+  color: #040707;
+  text-decoration: underline;
   font-family: "Rubik", sans-serif;
-font-size: 12px;
+  font-size: 12px;
 }
+
 .form-check-container {
-  border: 1px solid  #ededed;
+  border: 1px solid #ededed;
   font-family: "Rubik", sans-serif;
-font-size:12px;
-color:#040707;
-border-radius: 5px;
+  font-size: 12px;
+  color: #040707;
+  border-radius: 5px;
 }
-.edite_form_container{
+
+.edite_form_container {
   border: 1px solid #ededed;
   border-radius: 9px;
 }
-.checkbox_container{
-  width: auto;
 
+.checkbox_container {
+  width: auto;
 }
-.checkbox_container input{
-  width:15px;
+
+.checkbox_container input {
+  width: 15px;
 }
-.edite_form_container label ,
-.checkbox_container p
-{
-  color:#333;
-  font-size:12px;
+
+.edite_form_container label,
+.checkbox_container p {
+  color: #333;
+  font-size: 12px;
   font-family: "Tajawal", sans-serif;
-margin-top: 12px;
+  margin-top: 12px;
 }
-.edite_form_container select{
+
+.edite_form_container select {
   border-radius: 0.25rem;
 }
-@media screen and (max-width: 768px) {
+#changeExampleModal {
+  top: 5% !important;
+  right: -53%;
+  width: 145% !important;
+}
+#changeExampleModal .modal-content {
+  width: 100vw !important;
+  height: 85vh !important;
+}
+/***********************category result*******************/
+.category_result {
+  display: flex;
+  min-height: 75vh;
+  background-color: #fff;
+  padding: 25px 0;
+}
+.category_result select {
+  width: auto;
+  border: none;
+  padding: 12px 0;
+  position: relative;
+  bottom: 1px;
+}
+.category_result select:focus-visible {
+  border: none;
+  outline: none;
+}
+.category_result .featured_ads_container {
+  padding-top: 0px !important;
+}
+.category_result .flter_title {
+  color: #2d3142;
+  font-size: 18px;
+  font-family: "Tajawal", sans-serif;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.category_result label,
+.category_result ul li {
+  color: #818391;
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.category_result form p {
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
+  margin-top: 10px;
+}
+.category_result .ear_ipus {
+  display: flex;
+  justify-content: space-between;
+}
+.category_result .ear_ipus input {
+  text-align: start;
+  width: 40%;
+}
+/***********************ads details***********************/
+.ads_details {
+  background-color: #fff;
+  padding-top: 25px;
+  padding-bottom: 65px;
+}
 
+.ads_details .section_title {
+  color: #2d3142;
+  font-size: 15px;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 600;
+  background-color: #fff;
+}
+
+.ads_details .desc_container,
+.ads_details .properties_container {
+  background-color: #f6f8fa;
+  border: 1px solid #e3e7ef;
+  color: #2d3142;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.ads_details ul {
+  list-style: none;
+}
+.ads_details_container,
+.seller_box_container,
+.location_container {
+  border: 1px solid #eee;
+  padding: 20px 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+.show_more_ads {
+  color: #818391;
+  font-size: 12px;
+  font-family: "Tajawal", sans-serif;
+  margin-bottom: 0;
+}
+.seller_name,
+.seller_number {
+  font-size: 12px;
+  font-family: "Rubik", sans-serif;
+  color: #000;
+}
+.seller_number {
+  color: #53b553;
+}
+.ad_details_modal .modal-header {
+  border-bottom: none;
+}
+.ad_details_modal .modal-footer {
+  border-top: none;
+}
+.ad_details_modal .modal-title {
+  color: #2d3142;
+  font-family: "Tajawal", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+.ad_details_modal .choose_resone {
+  color: #818391;
+  font-family: "Tajawal", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 25px;
+}
+.ad_details_modal {
+  width: 570px !important;
+  top: 0% !important;
+}
+#reportexampleModal {
+  top: 5% !important;
+  width: 360px;
+  right: 35%;
+}
+#reportexampleModal .modal-content {
+  border-radius: 16px;
+}
+#reportexampleModal .btn:hover {
+  background-color: #fff;
+  color: #53b553;
+  border: 1px solid #53b553;
+}
+.ad_details_modal .comment {
+  color: #2d3142;
+  font-family: "Tajawal", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+/***********************offers********************/
+.breadcrumb {
+  background-color: transparent;
+}
+
+.breadcrumb a,
+.breadcrumb li {
+  color: #818391;
+  font-family: "Tajawal", sans-serif;
+  font-size: 14px;
+}
+
+.offers_container {
+  background-color: #fff;
+  min-height: 75vh;
+}
+
+.offers_container .card-img-top {
+  min-height: 227px;
+}
+
+.offers_container .nav-item .nav-link {
+  background-color: #f6f8fa !important;
+  border: none;
+  border-radius: 17px;
+  font-family: "Tajawal", sans-serif;
+  font-size: 14px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.offers_container .nav-item .active {
+  background-color: #53b553 !important;
+  border: none;
+  border-radius: 17px;
+  font-family: "Tajawal", sans-serif;
+  font-size: 14px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.offers_container .card-body img {
+  width: 25px;
+  height: 25px;
+}
+
+#adsexampleModal {
+  top: 0% !important;
+  right: 11%;
+}
+
+#adsexampleModal .modal-content {
+  width: 822px !important;
+}
+
+#adsexampleModal .modal-header {
+  padding: 0;
+}
+
+#adsexampleModal .modal-footer p {
+  color: #2d3142;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#adsexampleModal .modal-body img {
+  width: 25px;
+  height: 25px;
+}
+
+.adsImg {
+  height: 560px !important;
+  width: 819px !important;
+}
+
+/*************************Seller*******************/
+.seller_container {
+  background-color: #fff;
+  height: 78vh !important;
+}
+
+.add_title {
+  color: #2d3142;
+  font-family: "Tajawal", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.seller_img_container {
+  width: 152px;
+  height: 152px;
+  margin-top: 65px;
+}
+
+.seller_container h6 {
+  color: #2d3142;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  margin-top: 15px;
+}
+
+.seller_container .date_member {
+  color: #818391;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+}
+
+.seller_container .btn {
+  padding: 4px 26px !important;
+  border-radius: 19px;
+  cursor: default !important;
+}
+/******************************verfication_form*************/
+.verfication_form input {
+  border-radius: 16px !important;
+  border: 1px solid #d3d0e2 !important;
+  height: 65px !important;
+}
+.verfication_form .timer {
+  color: #538b98;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+.verfication_form .resend_code {
+  font-family: "Tajawal", sans-serif;
+  font-size: 14px;
+}
+.enter_code{
+  margin-bottom: 50px !important;
+  color: #818391;
+  font-family: "Tajawal", sans-serif;
+  font-size: 16px;
+
+}
+.camera_container{
+  border: 1px dotted #E3E7EF;
+  width: 180px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 768px) {
   .img_container {
     margin-top: 45px;
   }
@@ -1194,7 +1482,6 @@ margin-top: 12px;
 
   .ar_imp_link {
     text-align: right !important;
-
   }
 
   .footer h6 {
@@ -1203,7 +1490,6 @@ margin-top: 12px;
 
   .footer .imp_link_middle {
     text-align: left !important;
-
   }
 
   .imp_link_middle p {
@@ -1237,5 +1523,16 @@ margin-top: 12px;
 
   .profile_container .ar_form_container {
     height: auto;
+  }
+  .pagination
+  {
+    justify-content: flex-end;
+  }
+  .pagination li{
+    margin-left: 0 !important;
+  }
+  .button_container{
+    padding-top: 0 !important;
+    margin-top: 0 !important;
   }
 }
