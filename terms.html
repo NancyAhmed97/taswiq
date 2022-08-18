@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---------googleFont----------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Tajawal:wght@200;300;400;500;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
+        integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assits/css/index_style.css" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-----------------------------navbar------------------------------------------->
+    <div class="header_nav">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between py-2">
+                <div class="d-flex">
+                    <p class=" mb-0">
+                        <a class="lang" href="/en/terms.html">English</a>
+                    </p>
+                    <button class="btn  dropdown-toggle p-0 mx-3" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        مصر <img src="assits/imgs/egypt_flag.png" alt="egypt_flag" class="egypt_flag"> </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                              <a class="dropdown-item d-flex justify-content-end" href="#">
+                                <p>تركيا</p>
+                                <img
+                                  src="assits/imgs/egypt_flag.png"
+                                  alt="egypt_flag"
+                                  class="small_egypt_flag mt-1 mr-2"
+                                  style="transform: scale(1); width: 15px; height: 15px"
+                                />
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item d-flex justify-content-end" href="#">
+                                <p>السعودية</p>
+                                <img
+                                  src="assits/imgs/egypt_flag.png"
+                                  alt="egypt_flag"
+                                  class="small_egypt_flag mt-1 mr-2"
+                                  style="transform: scale(1); width: 15px; height: 15px"
+                                />
+                              </a>
+                            </li>
+                          </ul> 
+                                     </ul>
+
+
+
+
+                </div>
+                <div> <a href="" class="login_link">تسجيل الدخول</a>
+                    <img src="assits/imgs/facebook.png" alt="facebook" class="facebook_img">
+                    <img src="assits/imgs/instgram.png" alt="instgram" class="instgram_img">
+                    <img src="assits/imgs/twitter.png" alt="twitter" class="twitter_img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/home.html">
+                <img src="assits/imgs/logo.png" alt="logo" class="logo" />
+            </a> <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-0 w-100 d-flex justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link " href="/home.html" tabindex="-1" aria-disabled="true">الرئيسية</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            جميع التصنيفات
+                        </a>
+                        <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">العروض</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="/contactus.html">تواصل معنا</a>
+                    </li>
+
+
+
+                </ul>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ar_chat d-flex">
+                        <img src="assits/imgs/chat.svg" alt="chat" class="px-2">
+                    </li>
+                    <li class="nav-item ar_account_container">
+                        <button class="  dropdown-toggle p-0 mx-3 d-flex align-items-center" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+
+                            <img src="assits/imgs/AccoundImg.png" alt="AccoundImg" class="AccoundImg">
+                            Ahmed
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="d-flex ">
+                        <div class="add_ads d-flex justify-content-center">
+                            إضافة إعلان
+                            <img src="assits/imgs/add_img.png" class="add_img" alt="add_img">
+                        </div>
+                </form>
+            </div>
+
+        </div>
+    </nav>
+    <!-----------------------------section title---------------------------------------------->
+    <div class="ar_section_title">
+        <div class="container-fluid">
+            <p class="mb-0">تعليمات الاستخدام</p>
+        </div>
+    </div>
+    <!------------------------------Privacy container------------------------------------------>
+    <div class="ar_privacy_container py-3">
+        <div class="container-fluid">
+            <p class="pb-3">The website and the service are provided to you subject to these taswiq 4u terms of use
+                (these “terms”).</p>
+            <ul class="p-3">
+                <li>The website and the service are provided to you subject to these taswiq 4u terms of use (these
+                    “terms”). For the purpose of the terms and wherever the context so requires, the terms ‘you’ and
+                    “your” shall mean any person who uses the website or the service in any manner whatsoever including
+                    persons browsing the website and its content, posting comments or any content or responding to any
+                    advertisements or content on the website. By accessing, browsing or using the website or service,
+                    you agree to comply with these terms. Additionally, when using a portion of the service, you agree
+                    to conform to any applicable posted guidelines for such service, which may change or be updated from
+                    time to time at Taswiq 4 u’s sole discretion. You understand and agree that you are solely
+                    responsible for reviewing these terms from time to time. Should you object to any term or condition
+                    of these terms, any guideline, or any subsequent changes thereto or become unhappy with taswiq4u or
+                    the service in any way, your only choice is to immediately discontinue use of the taswiq4uwebsite.
+                    These terms may be updated by taswiq4uat any time at its sole discretion. Taswiq4umay send you
+                    notice of changes to the website or the terms pursuant to section xxi (i) herein.</li>
+
+            </ul>
+            <h1>Description of service and content policy</h1>
+            <ul class="p-3">
+                <li>Taswiq4uis the next generation of free online classifieds. We act as an online market place platform
+                    to allow our users who comply with these terms to offer, sell, and buy products and services listed
+                    on the website. Although you may be able to conduct payment and other transactions through the
+                    website, using third-party vendors, taswiq4uis not in any way involved in such transactions. As a
+                    result, and as discussed in more detail in these terms, you hereby acknowledge and agree that
+                    taswiq4uis not a party to such transactions, has no control over any element of such transactions,
+                    and shall have no liability to any party in connection with such transactions. You use the service
+                    and the website at your own risk. You understand that taswiq4udoes not control, and is not
+                    responsible for ads, directory information, business listings/information, messages between users,
+                    including without limitation e-mails sent from outside Taswiq 4 u’s domain or other means of
+                    electronic communication, whether through the website or another third party website (defined below)
+                    or offerings, comments, user postings, files, images, photos, video, sounds, business
+                    listings/information and directory information or any other material made available through the
+                    website and the service (“content”), and that by using the website and the service, you may be
+                    exposed to content that is offensive, indecent, inaccurate, misleading, or otherwise objectionable.
+                    You acknowledge and agree that you are responsible for and must evaluate, and bear all risks
+                    associated with, the use of any content, that you may not rely on said content, and that under no
+                    circumstances will taswiq4ube liable in any way for the content or for any loss or damage of any
+                    kind incurred as a result of the browsing, using or reading any content listed, e-mailed or
+                    otherwise made available via the service. You acknowledge and agree that taswiq4upermits such goods
+                    and services to be displayed and offered on the website that conform with the terms stated herein,
+                    however taswiq4udoes not pre-screen or approve any content, but that taswiq4uhas the right, in its
+                    sole and absolute discretion, to refuse, delete or move any content that is or may be available
+                    through the service, for violating these terms and such violation being brought to Taswiq 4 u’s
+                    knowledge or for any other reason or no reason at all. Furthermore, the website and content
+                    available through the website may contain links to other third-party websites (“third party
+                    websites”), which are completely unrelated to Taswiq 4 u. If you link to third party websites, you
+                    may be subject to those third-party websites’ terms and conditions and other policies. Taswiq4umakes
+                    no representation or guarantee as to the accuracy or authenticity of the information contained in
+                    any such third-party website, and your linking to any other websites is completely at your own risk
+                    and taswiq4udisclaims all liability thereto. You acknowledge and agree that you are solely
+                    responsible for your own content posted on, transmitted through, or linked from the service and the
+                    consequences of posting, transmitting, linking or publishing it. More specifically, you are solely
+                    responsible for all content that you upload, email or otherwise make available via the service. In
+                    connection with such content posted on, transmitted through, or linked from the service by you, you
+                    affirm, acknowledge, represent, warrant and covenant that: i) you have developed the contents such
+                    as description and/or photographs in accordance with the instructions and guidance for placing an ad
+                    provided by taswiq4u on the website and that any copyrights therein belongs to taswiq4u and, to any
+                    extent, should you be deemed to own any copyright you hereby assign any such copyright to taswiq4u.
+                    Ii) you acknowledge that the information and/or photographs that you post on the website is stored
+                    and compiled by taswiq4u in a proprietary database and that the uploaded information and/or
+                    photographs are modified by taswiq4u by applying a watermark of taswiq4u logo and in such derivate
+                    works also the copyright belongs to taswiq4u. Iii) you shall continue to, for such time the content
+                    is available on the website, have the necessary licenses, authorizations, consents, and permissions
+                    to use such content on the service and website (including without limitation all patent, trademark,
+                    trade secret, copyright or other proprietary rights in and to any and all such content) and wherever
+                    required, in such cases where you have the right, hereby authorize and license taswiq4u to
+                    exclusively use such content to enable inclusion and use of the content in the manner contemplated
+                    by the service, the website and these terms. and iv) you have the written consent, release, and/or
+                    permission of each and every identifiable individual person or business in the content to use the
+                    name or likeness of each and every such identifiable individual person or business to enable
+                    inclusion and use of the content in the manner contemplated by the service, the website and these
+                    terms. For clarity, by submitting any content on the website, as aforesaid, wherever you retain any
+                    ownership rights in the content, you hereby grant to taswiq4u an irrevocable, non-cancellable,
+                    perpetual, worldwide, exclusive, royalty-free, sub-licensable, transferable license to use,
+                    reproduce, distribute, prepare derivative works of, display, and perform the content in connection
+                    with the website and taswiq4u’s (and its successors’) business, including without limitation for the
+                    purpose of promoting and redistributing part or all of the website and content therein (and
+                    derivative works thereof) in any media formats and through any media channels now or hereafter
+                    known. Furthermore, by you posting content to any public area of the service, to the extent you
+                    retain any ownership of any rights, you agree to and do hereby grant to taswiq4u all exclusive
+                    rights necessary to prohibit or allow any subsequent aggregation, display, copying, duplication,
+                    reproduction, or exploitation of the content on the service or website by any party for any purpose
+                    including the right to initiate legal action in accordance with the copyright and other laws of
+                    Egypt. You also hereby grant each user of the website a non-exclusive license to access your content
+                    through the website. The foregoing license to each user granted by you terminates once you or
+                    taswiq4u remove or delete such content from the website Taswiq4u does not endorse any content or any
+                    opinion, statement, recommendation, or advice expressed therein, and taswiq4u expressly disclaims
+                    any and all liability in connection with user content. Taswiq4u does not permit copyright infringing
+                    activities and infringement of intellectual property rights on the website, and taswiq4u may, at its
+                    sole discretion, remove any infringing content if properly notified in accordance with applicable
+                    law that such content infringes on another’s intellectual property rights. Taswiq4u reserves the
+                    right to remove any content without prior notice. Taswiq4u may also terminate a user’s access to the
+                    website, if they are determined to be a repeat infringer or found to be indulging in any act
+                    contrary to these terms. A repeat infringer is a user who has been notified of infringing activity
+                    more than twice and/or has had a user submission removed from the website more than twice. Further,
+                    at its sole discretion, taswiq4u reserves the right to decide whether any content is appropriate and
+                    complies with these terms.</li>
+            </ul>
+            <h1>Featured ads</h1>
+            <p>Taswiq4u may offer a service known as “featured ads” where users may pay a non-refundable fee to have
+                their ads posted in selected locations on the website, thus potentially increasing an ads’ visibility.
+                In order to purchase a featured ad, you may be required to transmit certain information through a
+                third-party service provider, including but not limited to a third-party payment service provider, which
+                may be governed by its own terms of use and other policies. Taswiq4u makes no representation or
+                guarantee as to the safety or security of the information transmitted to any third-party service
+                provider, and your linking to any third-party service is completely at your own risk, and taswiq4u
+                disclaims all liability related thereto.</p>
+        </div>
+    </div>
+    <!----------------------------footer------------------------------------------------------->
+    <div class="footer py-5 " dir="ltr">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 p-0">
+                    <h6>تابعنا</h6>
+                    <ul class="p-0">
+                        <li class="d-inline-block"><img src="assits/imgs/linkidin.svg" class="linkidin" alt="linkidin">
+                        </li>
+                        <li class="d-inline-block"><img src="assits/imgs/twitter.svg" class="twitter" alt="twitter">
+                        </li>
+                        <li class="d-inline-block"><img src="assits/imgs/facebook.svg" alt="facebook" class="facebook">
+                        </li>
+                    </ul>
+                    <ul class="p-0">
+                        <li class="d-inline-block"><img src="assits/imgs/appstore.svg" class="appstore" alt="appstore">
+                        </li>
+                        <li class="d-inline-block"><img src="assits/imgs/googlePlay.svg" class="googlePlay"
+                                alt="googlePlay"></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 imp_link">
+                    <h6>الفئات</h6>
+                    <div class="row justify-content-end px-3">
+                        <div class="col-md-3 p-0">
+                            <p>Sports Equipments</p>
+                            <p>General Constructing</p>
+                            <p>Services</p>
+                            <p>Education</p>
+                        </div>
+                        <div class="col-md-3 p-0 imp_link_middle">
+                            <p><a>Fashion</a></p>
+                            <p>Baby</p>
+                            <p>Pets</p>
+                            <p>Jobs</p>
+                            <p>Furniture</p>
+
+                        </div>
+                        <div class="col-md-3 p-0">
+
+                            <p><a>Cars & Vehicles</a></p>
+                            <p>Properties</p>
+                            <p>Mobile Phones</p>
+                            <p>Electronics</p>
+                            <p>Video Games</p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3 follow_us">
+                    <h6>معلومات عنا</h6>
+                    <p><a href="privacy.html">سياسة الخصوصية</a></p>
+                    <p><a>الأسئلة</a></p>
+                    <p><a href="safteyRules.html">قواعد السلامة</a></p>
+                    <p><a href="/terms.html">تعليمات الاستخدام</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
