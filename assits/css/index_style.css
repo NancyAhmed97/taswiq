@@ -102,7 +102,7 @@ button:focus {
 }
 
 .landing_container {
-  height: 550px;
+  height: 430px;
 }
 
 .landing_container .carousel-control-next,
@@ -419,6 +419,13 @@ select {
   font-family: "Rubik", sans-serif;
   font-weight: 300;
 }
+.card_text p{
+    color: #818391;
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+
+}
 
 .featured_ads_container .date_icon,
 .latest_ads_container .date_icon {
@@ -471,7 +478,7 @@ select {
 
 .latest_ads_container {
   background-color: #fff !important;
-  padding-bottom: 280px;
+  padding-bottom: 62px;
 }
 
 /***********************footer***************************/
