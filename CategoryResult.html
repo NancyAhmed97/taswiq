@@ -1522,22 +1522,25 @@
                     </div>
                     <div class="felter_box pt-3 border-top pb-3">
                         <h5 class="flter_title">خيارات الدفع</h5>
-                        <form action="/action_page.php">
-                            <input type="checkbox" id="mehod1" name="mehod1" value="Cash" style="width: auto;">
-                            <label for="mehod1">Cash</label><br>
-                            <input type="checkbox" id="mehod2" name="mehod2" value="Exchange" style="width: auto;">
-                            <label for="mehod2">Exchange</label><br>
-                            <input type="checkbox" id="mehod3" name="mehod3" value="Installments" style="width: auto;">
-                            <label for="mehod3">Installments</label><br>
-
-                        </form>
-                    </div>
+                        <div class="form-check" >
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Default radio
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Default checked radio
+                            </label>
+                          </div>
+                                              </div>
                     <div class="felter_box pt-3 border-top pb-3">
                         <h5 class="flter_title">الحالة</h5>
                         <form action="/action_page.php">
-                            <input type="checkbox" id="sae1" name="sae1" value="Used" style="width: auto;">
+                            <input type="radio" id="sae1" name="sae1" value="Used" style="width: auto;">
                             <label for="sae1">Used</label><br>
-                            <input type="checkbox" id="sae2" name="sae2" value="New" style="width: auto;">
+                            <input type="radio" id="sae2" name="sae2" value="New" style="width: auto;">
                             <label for="sae2">New</label><br>
                         </form>
                     </div>
@@ -1553,15 +1556,15 @@
                     <div class="felter_box pt-3 border-top pb-3">
                         <h5 class="flter_title">سعة المحرك</h5>
                         <form action="/action_page.php">
-                            <input type="checkbox" id="cap1" name="cap1" value="1600 CC" style="width: auto;">
+                            <input type="radio" id="cap1" name="cap1" value="1600 CC" style="width: auto;">
                             <label for="cap1">1600 CC</label><br>
-                            <input type="checkbox" id="cap2" name="cap2" value="1400-1500 CC" style="width: auto;">
+                            <input type="radio" id="cap2" name="cap2" value="1400-1500 CC" style="width: auto;">
                             <label for="cap2">1400-1500 CC</label><br>
-                            <input type="checkbox" id="cap3" name="cap3" value="100-1300 CC" style="width: auto;">
+                            <input type="radio" id="cap3" name="cap3" value="100-1300 CC" style="width: auto;">
                             <label for="cap3">100-1300 CC</label><br>
-                            <input type="checkbox" id="cap4" name="cap4" value="1800-200 CC" style="width: auto;">
+                            <input type="radio" id="cap4" name="cap4" value="1800-200 CC" style="width: auto;">
                             <label for="cap4">1800-200 CC</label><br>
-                            <input type="checkbox" id="cap5" name="cap5" value="More than 300 CC"
+                            <input type="radio" id="cap5" name="cap5" value="More than 300 CC"
                                 style="width: auto;display: none;">
                             <label for="cap5" style="display:none ;">More than 300 CC</label><br>
                         </form>
@@ -1569,34 +1572,34 @@
                     <div class="felter_box pt-3 border-top pb-3">
                         <h5 class="flter_title">نوع التحويل</h5>
                         <form action="/action_page.php">
-                            <input type="checkbox" id="pe1" name="pe1" value="Manual" style="width: auto;">
+                            <input type="radio" id="pe1" name="pe1" value="Manual" style="width: auto;">
                             <label for="pe1">Manual</label><br>
-                            <input type="checkbox" id="pe2" name="pe2" value="Automatic" style="width: auto;">
+                            <input type="radio" id="pe2" name="pe2" value="Automatic" style="width: auto;">
                             <label for="pe2">Automatic</label><br>
                         </form>
                     </div>
                     <div class="felter_box pt-3 border-top">
                         <h5 class="flter_title">كيلومترات</h5>
                         <form action="/action_page.php">
-                            <input type="checkbox" id="dis1" name="dis1" value="Bike" style="width: auto;">
+                            <input type="radio" id="dis1" name="dis1" value="Bike" style="width: auto;">
                             <label for="dis1">More Than 100000</label><br>
-                            <input type="checkbox" id="dis2" name="dis2" value="Bike" style="width: auto;">
+                            <input type="radio" id="dis2" name="dis2" value="Bike" style="width: auto;">
                             <label for="dis2">10000-19999</label><br>
-                            <input type="checkbox" id="dis3" name="dis3" value="Bike" style="width: auto;">
+                            <input type="radio" id="dis3" name="dis3" value="Bike" style="width: auto;">
                             <label for="dis3">0-9999</label><br>
-                            <input type="checkbox" id="dis4" name="dis4" value="Bike" style="width: auto;">
+                            <input type="radio" id="dis4" name="dis4" value="Bike" style="width: auto;">
                             <label for="dis4">10000-19999</label><br>
                             <p style="color:#5287FF ;  font-family:Rubik;font-size: 14px; cursor: pointer;"
                                 id="kilo_show_more" class="mb-0">مشاهدة المزيد
                             </p>
 
-                            <input type="checkbox" id="dis5" name="dis5" value="Bike"
+                            <input type="radio" id="dis5" name="dis5" value="Bike"
                                 style="width: auto;display: none;">
                             <label for="dis5" class="dis5" style="display:none ;">0-9999</label><br>
-                            <input type="checkbox" id="dis6" name="dis6" value="Bike"
+                            <input type="radio" id="dis6" name="dis6" value="Bike"
                                 style="width: auto;display: none;">
                             <label for="dis6" class="dis6" style="display:none;">0-9999</label><br>
-                            <input type="checkbox" id="dis7" name="dis7" value="Bike"
+                            <input type="radio" id="dis7" name="dis7" value="Bike"
                                 style="width: auto;display: none;">
                             <label for="dis7" class="dis7" style="display:none;">0-9999</label>
                             <p style="color:#5287FF ;  font-family:Rubik;font-size: 14px; cursor: pointer;display:none;"

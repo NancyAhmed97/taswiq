@@ -1204,7 +1204,7 @@
         <div class="container-fluid">
 
             <div class="accordion" id="accordionExample">
-                <div class="accordion-item" style="background-color:#53B5531A;padding: 25px;">
+                <div class="accordion-item active_accordin" id="first_accordin">
                     <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -1234,7 +1234,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item"id="second_accordin">
                     <h2 class="accordion-header" id="headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -1264,7 +1264,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item"id="third_accordin">
                     <h2 class="accordion-header" id="headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -1370,7 +1370,25 @@
   
       <script>
           $(document).ready(function () {
-  
+  $('#second_accordin').click(function(){
+    $("#second_accordin").addClass("active_accordin");
+    $("#first_accordin").removeClass("active_accordin");
+    $("#third_accordin").removeClass("active_accordin");
+
+
+  })
+  $('#third_accordin').click(function(){
+    $("#third_accordin").addClass("active_accordin");
+    $("#first_accordin").removeClass("active_accordin");
+    $("#second_accordin").removeClass("active_accordin");
+
+  })
+  $('#first_accordin').click(function(){
+    $("#first_accordin").addClass("active_accordin");
+    $("#third_accordin").removeClass("active_accordin");
+    $("#second_accordin").removeClass("active_accordin");
+
+  })
               $("#Cars_vehicles").click(function () {
                   $("#level_two_Cars_vehicles").show();
                   $("#level_two_Mobile").hide();
