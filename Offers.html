@@ -23,8 +23,57 @@
     <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
         integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous" />
     <link rel="stylesheet" href="assits/css/index_style.css" />
-
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
     <title>Document</title>
+    <style>
+              .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        width: auto !important;
+        margin-left: 0 !important;
+      }
+      .swiper-wrapper {
+    justify-content:center;
+    display: flex;
+}
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: 'prev';
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #303003;
+}
+
+    </style>
 </head>
 
 <body>
@@ -1208,58 +1257,70 @@
     </div>
     <!---------------------------offer----------------------------------------------->
     <div class="offers_container py-5">
+    
         <div class="container-fluid">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all"
-                        type="button" role="tab" aria-controls="pills-all" aria-selected="true">جميع التصنيفات</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-realEstates-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-realEstates" type="button" role="tab" aria-controls="pills-realEstates"
-                        aria-selected="false">العقارات</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-engines-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-engines" type="button" role="tab" aria-controls="pills-engines"
-                        aria-selected="false">الشحن والتسليم</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-furnitureMoving-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-furnitureMoving" type="button" role="tab"
-                        aria-controls="pills-furnitureMoving" aria-selected="false">سياحة و سفر</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-wedding-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-wedding" type="button" role="tab" aria-controls="pills-wedding"
-                        aria-selected="false">قطع الزفاف</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-finishes-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-finishes" type="button" role="tab" aria-controls="pills-finishes"
-                        aria-selected="false">التشطيبات والديكور</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-shiping-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-shiping" type="button" role="tab" aria-controls="pills-shiping"
-                        aria-selected="false">الشحن والتسليم</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-furnitureTransfer-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-furnitureTransfer" type="button" role="tab"
-                        aria-controls="pills-furnitureTransfer" aria-selected="false">نقل الاثاث</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-engin-tab" data-bs-toggle="pill" data-bs-target="#pills-engin"
-                        type="button" role="tab" aria-controls="pills-engin" aria-selected="false">محركات</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-other-tab" data-bs-toggle="pill" data-bs-target="#pills-other"
-                        type="button" role="tab" aria-controls="pills-other" aria-selected="false">اخري</button>
-                </li>
+            <div class="swiper mySwiper">
 
-            </ul>
+                <ul class="nav nav-pills mb-3 swiper-wrapper flex-nowrap" id="pills-tab" role="tablist">
+                    <li class="nav-item swiper-slide" role="presentation">
+                        <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all"
+                            type="button" role="tab" aria-controls="pills-all" aria-selected="true">جميع التصنيفات</button>
+                    </li>
+                    <li class="nav-item swiper-slide" role="presentation">
+                        <button class="nav-link" id="pills-realEstates-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-realEstates" type="button" role="tab" aria-controls="pills-realEstates"
+                            aria-selected="false">العقارات</button>
+                    </li>
+                    <li class="nav-item swiper-slide" role="presentation">
+                        <button class="nav-link" id="pills-engines-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-engines" type="button" role="tab" aria-controls="pills-engines"
+                            aria-selected="false">الشحن والتسليم</button>
+                    </li>
+                    <li class="nav-item swiper-slide" role="presentation">
+                        <button class="nav-link" id="pills-furnitureMoving-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-furnitureMoving" type="button" role="tab"
+                            aria-controls="pills-furnitureMoving" aria-selected="false">سياحة و سفر</button>
+                    </li>
+                    <li class="nav-item swiper-slide" role="presentation">
+                        <button class="nav-link" id="pills-wedding-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-wedding" type="button" role="tab" aria-controls="pills-wedding"
+                            aria-selected="false">قطع الزفاف</button>
+                    </li>
+                    <li class="nav-item swiper-slide" role="presentation">
+                        <button class="nav-link" id="pills-finishes-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-finishes" type="button" role="tab" aria-controls="pills-finishes"
+                            aria-selected="false">التشطيبات والديكور</button>
+                    </li>
+                    <li class="nav-item swiper-slide" role="presentation">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-shiping-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-shiping" type="button" role="tab" aria-controls="pills-shiping"
+                            aria-selected="false">الشحن والتسليم</button>
+                    </li>
+                    <li class="nav-item swiper-slide" role="presentation">
+                        <button class="nav-link" id="pills-furnitureTransfer-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-furnitureTransfer" type="button" role="tab"
+                            aria-controls="pills-furnitureTransfer" aria-selected="false">نقل الاثاث</button>
+                    </li>
+                    <li class="nav-item swiper-slide" role="presentation">
+                        <button class="nav-link" id="pills-engin-tab" data-bs-toggle="pill" data-bs-target="#pills-engin"
+                            type="button" role="tab" aria-controls="pills-engin" aria-selected="false">محركات</button>
+                    </li>
+                    <li class="nav-item swiper-slide" role="presentation">
+                        <button class="nav-link" id="pills-other-tab" data-bs-toggle="pill" data-bs-target="#pills-other"
+                            type="button" role="tab" aria-controls="pills-other" aria-selected="false">اخري</button>
+                    </li>
+                
+                 
+               
+                </ul>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                        </div>
+          
+       
+
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab"
                     tabindex="0">
@@ -1267,7 +1328,7 @@
                         <div class="col-md-4">
                             <div class="featured_ads_container p-0 mt-3">
                                 <div class="card" type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#adsexampleModal">
+                                    data-bs-target="#exampleModalCenter">
                                     <img src="assits/imgs/adsImg.png" class="card-img-top" alt="..." />
 
                                     <div class="card-body">
@@ -2813,60 +2874,72 @@
         </div>
       </div>
     <!-- Modal -->
-    <div class="modal fade" id="adsexampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <img src="/assits/imgs/adsImg.png" alt="adsImg" class="adsImg">
-                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-                </div>
-                <div class="modal-body">
-                    <h6>Absolute real state</h6>
-                    <div class="d-flex justify-content-end">
-                        <img src="/assits/imgs/seenIcon.png" alt="seenIcon">
-                        <p>20</p>
-                        <img src="/assits/imgs/likeIcon.png" alt="likeIcon" class="ml-2">
-                        <p>07</p>
-                    </div>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true" dir="ltr">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
 
+        <div class="modal-body p-0" style="position:relative;">
+          <img src="assits/imgs/Group 72768 (1).svg" style="width: 5%;position: absolute;top: 1%;right: 1%;cursor: pointer;"
+            data-bs-dismiss="modal" aria-label="Close" />
 
-                </div>
-                <div class="modal-footer">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="d-flex justify-content-end mt-2">
-                                    <p class="mx-3 mt-2">+966 344 234 23</p>
-                                    <img src="/assits/imgs/Group 73002@2x.png" alt=".." width="12%">
-                                </div>
-                            </div>
-                            <div class="col-6">
+          <img src="assits/imgs/91f015ade2f92e41a87d40faf552bced@2x.png" alt="" class="w-100">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img src="assits/imgs/Group 72768@2x.svg" alt="" class="close_ads_modal">
+          </button>
+          <h6 class="text-left w-100 px-3 mt-3">Absolute real state</h6>
+          <div class="d-flex justify-content-end px-3">
+            <div class="mx-3 d-flex">
+              <p class="mb-0 mx-2">08</p>
+              <img src="assits/imgs/Mask Group 29512.svg" style="width: 20px;" />
 
-                                <div class="d-flex justify-content-end mt-2">
-                                    <p class="mx-3 mt-2">+966 344 234 23</p>
-                                    <img src="/assits/imgs/Group 73001@2x.png" alt=".." width="12%">
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex justify-content-end  mt-2">
-                                    <p class="mx-3 mt-2">www.taswiq4u.com</p>
-                                    <img src="/assits/imgs/Group 73107@2x.png" alt=".." width="12%">
-                                </div>
-
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex justify-content-end  mt-2">
-                                    <p class="mx-3 mt-2">www.taswiq4u.com</p>
-                                    <img src="/assits/imgs/Group 73108@2x.png" alt=".." width="12%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-    </div>
+            <div class="d-flex">
+              <p class="mb-0 mx-2">07</p>
+              <img src="assits/imgs/Mask Group 29513.svg" style="width: 20px;" />
 
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer d-flex flex-column ">
+          <div class="d-flex justify-content-between w-100">
+            <div class="d-flex">
+              <p class="mb-0 mt-1 mx-3">+966 344 234 23</p>
+              <img src="assits/imgs/Group 73001.svg" style="width: 30px;" />
+            </div>
+            <div class="d-flex">
+              <p class="mb-0 mt-1 mx-2">+966 344 234 23</p>
+              <img src="assits/imgs/Group 73002.svg" style="width: 30px;" />
+            </div>
+          </div>
+          <div class="d-flex justify-content-between w-100 mt-3">
+            <div class="d-flex">
+              <p class="mb-0 mt-1 mx-2">www.taswiq4u.com</p>
+              <img src="assits/imgs/Group 73107.svg" style="width: 30px;" />
+            </div>
+
+            <div class="d-flex">
+              <p class="mb-0 mt-1 mx-2">www.taswiq4u.com</p>
+              <img src="assits/imgs/Group 73108.svg" style="width: 30px;" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 9,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   
@@ -3423,6 +3496,7 @@
           });
   
       </script>
+     
       <script src="assits/js/main.js">
   
       </script>
