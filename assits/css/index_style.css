@@ -1639,6 +1639,10 @@ min-width: 300px;
   font-size: 19px;
   font-weight: bold;
   cursor: pointer;
+  width: 118px;
+  margin: auto;
+  display: flex;
+  padding-bottom: 17px;
 }
 
 .enter_code {
