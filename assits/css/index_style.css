@@ -2098,9 +2098,16 @@ min-width: 300px;
 }
 
 .product-detail .nav.nav-pills .nav-link:hover,
-.product-detail .nav.nav-pills .nav-link.active {
+.product-detail .nav.nav-pills .nav-link.active
+
+{
   color: #000000;
   background: #ff6f61;
+}
+.dropdown-toggle:hover
+{
+  color:rgba(0,0,0,.7) !important;
+
 }
 
 .product-detail .tab-content {
