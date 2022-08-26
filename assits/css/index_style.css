@@ -1571,9 +1571,18 @@ textarea {
 .second_level14,
 .second_level2
 {
-min-width: 300px;
+min-width: max-content;
 }
-
+.all_Category_dropdown li{
+cursor: pointer;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after,
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  content: 'prev';
+  font-size: 29px !important;
+  font-weight: bold;
+  color: #fff;
+}
 /*************************Seller*******************/
 .seller_container {
   background-color: #fff;
@@ -1845,7 +1854,9 @@ min-width: 300px;
 #level_three_Properties li,
 #level_two_Properties li,
 #level_three_Education li,
-#level_two_Education li {
+#level_two_Education li,
+#level_four_Cars_vehicles li{
+
   display: flex;
   justify-content: space-between;
   cursor: pointer;
